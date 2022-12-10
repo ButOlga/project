@@ -1,23 +1,21 @@
-'use srtict';
-let arr = ['plum', 'orange', 'apple'];
+let money = prompt("Ваш бюджет на месяц?", ''),
+    time = prompt("Введите дату в формате YYYY-MM-DD", '');
 
-// alert("Hello, world!");
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optinalExpences: {},
+    income: [],
+    savings: false
+};
 
-// let ans = +prompt("Сколько Вам лет?", "");
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+   a2 = prompt("Во сколько это обойдется?", ''),
+   a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+   a4 = prompt("Во сколько это обойдется?", '');
 
-// console.log(typeof(ans));
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-let incr = 10,
-    decr = 10;
-
-// incr++;
-// decr--;
-
-// console.log(incr++);
-// console.log(decr--);
-// console.log(5%2);
-
-let isChecked = true,
-    isClosed = false;
-
-console.log(isChecked && !isClosed);
+alert(appData.budget / 30);
